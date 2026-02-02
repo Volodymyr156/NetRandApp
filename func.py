@@ -14,10 +14,10 @@ list_chars = [chr(x) for x in range(97,123)]
 
 
 def link_gen(link_input):
-    protocol = link_input[0]
+    protocol = link_input[0].lower()
     k_chars = int(link_input[1])
     k_numbers = int(link_input[2])
-    domain = link_input[3]
+    domain = link_input[3].lower()
     i = int(link_input[4])
 
     print(protocol,k_chars,k_numbers,domain)
@@ -46,5 +46,8 @@ def link_gen(link_input):
 
     print(f"Loop completed")
 
+
+def iplink_gen(iplink_input):
+    pass
 
 
